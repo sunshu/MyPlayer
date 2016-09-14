@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="htonum" format="string"></attr>
+    <attr name="htocolor" format="color|dimension"></attr>
+    <declare-styleable name="Redview">
+        <attr name="htonum"></attr>
+        <attr name="htocolor"></attr>
+    </declare-styleable>
+
+</resources>

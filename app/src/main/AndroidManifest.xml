@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nus.me.myplayer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/ImageTranslucentTheme" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Bezier.ActivityListView" />
+        <activity android:name=".ui.media.VideoActivity" />
+        <activity android:name=".ui.test.Activitymp" />
+        <activity android:name=".ui.media.PLAudioPlayerActivity" />
+        <activity android:name=".ui.media.PLMediaPlayerActivity" />
+        <activity android:name=".ui.media.PLVideoTextureActivity" />
+        <activity android:name=".ui.media.PLVideoViewActivity" />
+        <activity android:name=".ui.media.VideoFileActivity" />
+        <activity android:name=".ui.media.VideoViewActivity" />
+
+        <activity
+            android:name=".ui.media.my.MyMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.media.my.MyFileActivity"></activity>
+    </application>
+
+</manifest>

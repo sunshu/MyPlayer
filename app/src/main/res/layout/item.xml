@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="5dp"
+        android:id="@+id/iv_item"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/iv_item"
+        android:text="mingceng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_item"
+        android:text="jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_item"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
